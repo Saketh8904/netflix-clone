@@ -96,14 +96,6 @@ This project simulates a real enterprise-grade setup where a **React-based Netfl
 
 ---
 
-## 🔔 Bonus Tip
-
-If you’re following along, don’t forget to:
-- 🎥 **Watch the video version** for step-by-step guidance  
-- 💼 **Tag [@Aman Pathak](https://www.linkedin.com/in/aman-devops/)** on LinkedIn when you post your progress — showcasing your DevOps achievements helps you grow professionally!
-
----
-
 ## 🧑‍💻 Author
 
 **Connect with Me**  
