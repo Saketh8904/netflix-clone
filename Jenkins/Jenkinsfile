@@ -58,7 +58,7 @@ pipeline{
                     dir('Application-Code') {
                     
                                 dependencyCheck(
-                                    odcInstallation: 'OWASP-Dependency-Check',
+                                    odcInstallation: 'DP-Check',
                                     additionalArguments: '''
                                         --scan .
                                         --disableYarnAudit
