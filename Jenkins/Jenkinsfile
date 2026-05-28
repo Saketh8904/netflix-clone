@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/AmanPathak-DevOps/Netflix-Clone-K8S-End-to-End-Project.git'
+                git branch: 'main', url: 'https://github.com/Saketh8904/netflix-clone.git'
             }
         }
         stage('Install Dependencies') {
