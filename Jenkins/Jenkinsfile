@@ -39,7 +39,7 @@ pipeline{
                         -Dsonar.language=ts \
                         -Dsonar.exclusions=dist/**,node_modules/**,public/** \
                         -Dsonar.host.url=$SONAR_HOST_URL \
-                        -Dsonar.login=$SONAR_AUTH_TOKEN
+                        -Dsonar.token=$SONAR_AUTH_TOKEN
                         '''
                     }
                 }
@@ -54,21 +54,11 @@ pipeline{
             }
         stage('OWASP Dependency Check') {
             steps {
-                retry(2) {
-                    dir('Application-Code') {
+                dir('Application-Code') {
+                    dependencyCheck additionalArguments: '--scan ./ --disableRetireJS',
+                    odcInstallation: 'DP-Check'
                     
-                                dependencyCheck(
-                                    odcInstallation: 'DP-Check',
-                                    additionalArguments: '''
-                                        --scan .
-                                        --disableYarnAudit
-                                        --disableNodeAudit
-                                        --format XML
-                                    '''
-                                )
-                    
-                                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
-                    }
+                    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
                 }
             }
         }
