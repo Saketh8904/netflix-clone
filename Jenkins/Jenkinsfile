@@ -53,28 +53,25 @@ pipeline{
                 } 
             }
        stage('OWASP Dependency Check') {
-        steps {
-            dir('Application-Code') {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-            
-                        
+            steps {
+                dir('Application-Code') {
+                    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                         dependencyCheck(
                             odcInstallation: 'DP-Check',
                             additionalArguments: '''
                                 --scan . \
                                 --disableRetireJs \
-                                --disableYarnAudit
-                                '''   
+                                --disableYarnAudit \
+                                --nvdApiDelay 6000 \
+                                --data /var/lib/jenkins/owasp-data
+                            '''
                         )
-            
                         dependencyCheckPublisher(
-                        pattern: '**/dependency-check-report.xml'
+                            pattern: '**/dependency-check-report.xml'
                         )
                     }
                 }
             }
-        
-        
         }
 
             
