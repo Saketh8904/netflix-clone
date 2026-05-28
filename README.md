@@ -25,7 +25,7 @@ This project demonstrates a complete DevSecOps workflow for deploying a Netflix 
 - **Monitoring Stack** for Jenkins, Kubernetes, and the app itself  
 
 ---
----
+
 
 ## 📚 What I Learned
 
