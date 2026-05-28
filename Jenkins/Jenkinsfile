@@ -58,10 +58,9 @@ pipeline{
                     dependencyCheck(
                         odcInstallation: 'DP-Check',
                         additionalArguments: '''
-                        --scan . 
-                        --disableRetireJS 
+                        --scan . \
+                        --disableRetireJS \
                         --disableYarnAudit 
-                        --noupdate
                         '''
                     )
             
