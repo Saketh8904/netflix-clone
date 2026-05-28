@@ -1,10 +1,6 @@
-# 🎬 Netflix Clone - DevSecOps Project
-[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/aman-devops/)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/jdzF8kTtw2)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@amanpathakdevops)
-[![GitHub](https://img.shields.io/github/stars/AmanPathak-DevOps.svg?style=social)](https://github.com/AmanPathak-DevOps)
-[![AWS](https://img.shields.io/badge/AWS-%F0%9F%9B%A1-orange)](https://aws.amazon.com)
-[![Terraform](https://img.shields.io/badge/Terraform-%E2%9C%A8-lightgrey)](https://www.terraform.io)
+# 🎬 Netflix Clone CI/CD & DevSecOps Pipeline on AWS
+[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/saketh-alevooraya-k-01bb012a9/)
+[![GitHub](https://img.shields.io/github/stars/Saketh Alveooraya K-DevOps.svg?style=social)](https://github.com/Saketh8904/)
 
 ![Architecture Diagram](assets/arch-diag.gif)
 
@@ -17,7 +13,7 @@ Built to demonstrate **real-world DevSecOps workflows** for CI/CD, cloud automat
 
 ## 🚀 Project Overview
 
-This project simulates a real enterprise-grade setup where a **React-based Netflix Clone** is deployed and managed through a **secure, automated DevOps pipeline**.
+This project demonstrates a complete DevSecOps workflow for deploying a Netflix Clone application using modern **DevOps tools and cloud technologies**.
 
 ### 🌐 Key Features
 - **Infrastructure as Code** with Terraform (AWS provisioning)
@@ -27,6 +23,23 @@ This project simulates a real enterprise-grade setup where a **React-based Netfl
 - **Containerization** with Docker  
 - **Kubernetes Deployment** (unmanaged cluster setup)  
 - **Monitoring Stack** for Jenkins, Kubernetes, and the app itself  
+
+---
+---
+
+## 📚 What I Learned
+
+During this project, I learned:
+
+### 🌐 Key Features
+- Writing **Infrastructure as Code** using Terraform
+- Creating Jenkins pipelines for **CI/CD automation**
+- Docker **image creation** and **container management**
+- Kubernetes **deployments** and **service exposure**
+- **Integrating** SonarQube and Trivy into pipelines
+- **Monitoring infrastructure** using Prometheus and Node Exporter
+- Managing **application deployment** on AWS EC2 instances
+- Debugging **CI/CD pipeline failures** and **Kubernetes issues**
 
 ---
 
@@ -91,16 +104,11 @@ This project simulates a real enterprise-grade setup where a **React-based Netfl
 | ☸️ **Part 4** | *Kubernetes Cluster Setup + Deployment* | Full app deployment in K8s |
 | 📊 **Part 5** | *Monitoring Setup* | End-to-end observability |
 
+---
+## References
 📺 **Watch here:** [YT Playlist Link](https://youtube.com/playlist?list=PLyJzBek6WsDpKcOxL-F8rAl7FgliN9x6M&si=toDUa6Qx05LYHtbu)  
-🧾 **Read on Medium:** [Medium Blog Series Link](https://blog.stackademic.com/building-a-complete-devsecops-project-part-1-automating-aws-infrastructure-with-terraform-cloud-a51e98b95783)
 
 ---
-
-## 🧑‍💻 Author
-
-**Connect with Me**  
-DevOps & Cloud Engineer 
-🔗 [LinkedIn](https://www.linkedin.com/in/aman-devops/) • [YouTube](https://www.youtube.com/@aman-pathak) • [Medium](https://medium.com/@amanpathakdevops)
 
 ## Contributing
 We welcome contributions! If you have ideas for enhancements or find any issues, please open a pull request or file an issue.
