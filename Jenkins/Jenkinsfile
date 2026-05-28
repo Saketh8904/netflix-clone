@@ -55,21 +55,12 @@ pipeline{
        stage('OWASP Dependency Check') {
             steps {
                 dir('Application-Code') {
-                    dependencyCheck(
-                        odcInstallation: 'DP-Check',
-                        additionalArguments: '''
-                        --scan . \
-                        --disableRetireJS \
-                        --disableYarnAudit 
-                        '''
-                    )
-            
-            
-                    dependencyCheckPublisher(
-                        pattern: '**/dependency-check-report.xml'
-                    )
+                    echo "🔒 Running OWASP Dependency Check..."
+                    dependencyCheck additionalArguments: '--scan ./ --format XML --out .', odcInstallation: 'owasp-dp-check'
+                    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
                 }
             }
+        }
             
             
         }
