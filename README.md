@@ -1,6 +1,6 @@
 # 🎬 Netflix Clone CI/CD & DevSecOps Pipeline on AWS
 [![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/saketh-alevooraya-k-01bb012a9/)
-[![GitHub](https://img.shields.io/github/stars/Saketh Alveooraya K-DevOps.svg?style=social)](https://github.com/Saketh8904/)
+
 
 ![Architecture Diagram](assets/arch-diag.gif)
 
